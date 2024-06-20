@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .pass {
+            color: green;
+        }
+
+        .fail {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Test Result</h2>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Score</th>
+        </tr>
+        {% for score in scores %}
+        <tr>
+            <td>Question {{ loop.index }}</td>
+            <td>{{ score }}/5</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td><strong>Total Marks</strong></td>
+            <td>{{ total_marks }}/10</td>
+        </tr>
+        <tr>
+            <td><strong>Result</strong></td>
+            <td class="{% if result == 'Pass' %}pass{% else %}fail{% endif %}">{{ result }}</td>
+        </tr>
+    </table>
+</body>
+</html>

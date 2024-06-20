@@ -1,0 +1,92 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #EEEEEE;
+  
+}
+.reg{
+  padding-left: 250px;
+  
+
+}
+.container{
+  display:flex;
+  font-size: large;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-right: 1000px;
+}
+.home-img{
+  padding-left: 900px;
+  padding-top: 100px;
+}
+.container{
+  display:flex;
+  font-size: large;
+}
+.onediv{
+  margin-top: 40px;
+  margin-right: 40px;
+  width:30%;
+  
+  
+}
+.home{
+  width: 70%;
+  margin-top: 50px;
+  margin-right: 200px;
+ 
+}
+
+.container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+}
+.button {
+  
+
+  background-color:#333 ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  cursor: pointer;
+  margin-left: 50px;
+  
+}
+.home-text{
+  float: left;
+  padding-left: 60px;
+  padding-right: 800px;
+  padding-top: 20px;
+}
+
+li {
+  float: right;
+  padding-right: 70px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+} 
